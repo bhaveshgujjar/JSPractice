@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Modal components</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem
+          iure magnam totam dolores expedita quae asperiores eveniet, optio,
+          laborum porro, atque nam dolor nobis in eaque obcaecati maiores
+          deleniti.
+        </p>
+        <button onclick="OpanModal()">Demo Modal</button>
+      </div>
+      <div id="modal" class="modal-wrap">
+        <div class="box-modal">
+          <div class="modal-title">Js Modal</div>
+          <div class="modal-body">
+            <p>Hello World</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
+              natus. Eius minus beatae eveniet vel soluta odio, ipsum
+              repellendus quas quidem deserunt sed! Labore sed quae eveniet
+              exercitationem accusamus? Ad?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
+              natus. Eius minus beatae eveniet vel soluta odio, ipsum
+              repellendus quas quidem deserunt sed! Labore sed quae eveniet
+              exercitationem accusamus? Ad?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
+              natus. Eius minus beatae eveniet vel soluta odio, ipsum
+              repellendus quas quidem deserunt sed! Labore sed quae eveniet
+              exercitationem accusamus? Ad?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
+              natus. Eius minus beatae eveniet vel soluta odio, ipsum
+              repellendus quas quidem deserunt sed! Labore sed quae eveniet
+              exercitationem accusamus? Ad?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button onclick="ClosModal()">Save</button>
+            <button onclick="ClosModal()">cancel</button>
+          </div>
+          <button onclick="ClosModal()" class="clos-icon">x</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const Mymodal = document.getElementById("modal");
+    OpanModal = function () {
+      Mymodal.style.display = "block";
+    };
+    ClosModal = function () {
+      Mymodal.style.display = "none";
+    };
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</html>
