@@ -18,23 +18,14 @@
         </p>
         <button onclick="OpanModal()">Demo Modal</button>
       </div>
-      <div id="modal" class="modal-wrap">
+      <div id="modal" class="modal-wrap fade">
         <div class="box-modal">
-          <div class="modal-title">Js Modal</div>
+          <div class="modal-header">
+            <div class="modal-title">Js Modal</div>
+            <button onclick="ClosModal()" class="clos-icon">x</button>
+          </div>
           <div class="modal-body">
             <p>Hello World</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
-              natus. Eius minus beatae eveniet vel soluta odio, ipsum
-              repellendus quas quidem deserunt sed! Labore sed quae eveniet
-              exercitationem accusamus? Ad?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
-              natus. Eius minus beatae eveniet vel soluta odio, ipsum
-              repellendus quas quidem deserunt sed! Labore sed quae eveniet
-              exercitationem accusamus? Ad?
-            </p>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus,
               natus. Eius minus beatae eveniet vel soluta odio, ipsum
@@ -52,7 +43,6 @@
             <button onclick="ClosModal()">Save</button>
             <button onclick="ClosModal()">cancel</button>
           </div>
-          <button onclick="ClosModal()" class="clos-icon">x</button>
         </div>
       </div>
     </section>
@@ -60,15 +50,27 @@
   <script>
     const Mymodal = document.getElementById("modal");
     OpanModal = function () {
-      Mymodal.style.display = "block";
+      document.body.classList.add("modal-open");
+      Mymodal.classList.add("show");
+      var BackdropElem = document.createElement("div");
+      BackdropElem.className = "modal-backdrop show";
+      BackdropElem.id = "BackdropId";
+      document.body.appendChild(BackdropElem);
     };
     ClosModal = function () {
-      Mymodal.style.display = "none";
+      document.body.classList.remove("modal-open");
+      Mymodal.classList.remove("show");
+      let BackdropId = document.getElementById("BackdropId");
+      BackdropId.parentNode.removeChild(BackdropId);
     };
     window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+      if (event.target == BackdropId) {
+        Mymodal.classList.remove("show");
+        let BackdropId = document.getElementById("BackdropId");
+        BackdropId.parentNode.removeChild(BackdropId);
+        document.body.classList.remove("modal-open");
       }
+      console.log(event.target);
     };
   </script>
 </html>
