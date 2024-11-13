@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <header class="header-wrap">
+          <div class="logo">
+            <a href="#">CircleUp</a>
+          </div>
+          <div class="menu laptop">
+            <ul>
+              <li>
+                <a href="#"
+                  >FEATURES <img src="./down-arrow-svgrepo-com.svg" alt="arrow"
+                /></a>
+                <ul class="sub-menu">
+                  <li><a href="#">FEATURES 1</a></li>
+                  <li><a href="#">FEATURES 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">PRIVACY</a></li>
+              <li><a href="#">HELP CENTRE</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+            <button class="close-icon">Close Menu</button>
+          </div>
+          <div class="menu" id="mobileMenuList">
+            <ul>
+              <li>
+                <a href="#"
+                  >FEATURES <img src="./down-arrow-svgrepo-com.svg" alt="arrow"
+                /></a>
+                <ul class="sub-menu">
+                  <li><a href="#">FEATURES 1</a></li>
+                  <li><a href="#">FEATURES 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">PRIVACY</a></li>
+              <li><a href="#">HELP CENTRE</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+            <button class="close-icon" onclick="mobileMenuClose()">
+              close Menu
+            </button>
+          </div>
+          <div class="login-mobile">
+            <div class="login-btn">
+              <a href="#">LOG IN</a>
+              <a href="#" class="signup">SIGN UP</a>
+            </div>
+            <button class="mobile-menu-icon" onclick="mobileMenuOpen()">
+              Menu
+            </button>
+          </div>
+        </header>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="title">
+          <h1>
+            CONNECT <span></span>
+            <figure>
+              <img
+                class="bg-pink"
+                src="./istockphoto-1134016793-1024x1024.jpg"
+                alt=""
+              />
+            </figure>
+            CREATE AUGMENT
+            <figure>
+              <img
+                class="bg-green"
+                src="./istockphoto-1437816897-2048x2048.jpg"
+                alt=""
+              />
+            </figure>
+            YOUR
+            <figure>
+              <img
+                class="bg-Purple"
+                src="./istockphoto-1497142422-1024x1024.jpg"
+                alt=""
+              />
+            </figure>
+            REALITY <span></span>
+            <figure>
+              <img
+                class="bg-light-pink"
+                src="./istockphoto-969342904-1024x1024.jpg"
+                alt=""
+              />
+            </figure>
+          </h1>
+          <div class="download-btn">
+            <a href="#">(Download now !)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="owl-carousel owl-theme">
+        <div class="item1">
+          <h4>
+            <img src="" alt="" />
+            <span
+              >Choose<br />
+              your own <br />plan</span
+            >
+          </h4>
+        </div>
+        <div class="item2">
+          <video autoplay muted loop src="./stockfootagevideo.webm"></video>
+        </div>
+        <div class="item3">
+          <div class="title-icon">
+            <div class="dis-title">
+              DISCOVER<br />
+              OUR HISTORY
+            </div>
+            <div class="icon">
+              <img src="./down-arrow-svgrepo-com.svg" alt="" />
+            </div>
+          </div>
+          <div class="about-title">
+            About <br />
+            CircleUp
+          </div>
+        </div>
+        <div class="item4">
+          <div class="view-feature-wrap">
+            <img src="./item4.svg" alt="" />
+            <div class="view-feature">View feature set</div>
+          </div>
+        </div>
+        <div class="item3">
+          <div class="title-icon">
+            <div class="dis-title">
+              DISCOVER<br />
+              OUR HISTORY
+            </div>
+            <div class="icon">
+              <img src="./down-arrow-svgrepo-com.svg" alt="" />
+            </div>
+          </div>
+          <div class="about-title">
+            About <br />
+            CircleUp
+          </div>
+        </div>
+        <div class="item6">
+          <div class="our-blog">
+            <span>Our blog</span>
+          </div>
+        </div>
+        <div class="item2">
+          <video autoplay muted loop src="./stockfootagevideo.webm"></video>
+        </div>
+        <div class="item4">
+          <div class="view-feature-wrap">
+            <img src="./item4.svg" alt="" />
+            <div class="view-feature">View feature set</div>
+          </div>
+        </div>
+        <div class="item9">
+          <div class="collaborative">
+            <div class="get-start">
+              GETTING STARTED<br />
+              IS EASY
+            </div>
+            <span>Collaborative</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 1220,
+        autoWidth: true,
+        // freeDrag: true,
+        smartSpeed: 1200,
+        // slideBy: 1,
+        dots: false,
+        animateIn: "linear",
+        animateOut: "linear",
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 3,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 7,
+            loop: true,
+          },
+        },
+      });
+      function mobileMenuOpen() {
+        var element = document.getElementById("mobileMenuList");
+        element.classList.add("open");
+      }
+      function mobileMenuClose() {
+        var element = document.getElementById("mobileMenuList");
+        element.classList.remove("open");
+      }
+    </script>
+  </body>
+</html>

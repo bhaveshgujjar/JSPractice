@@ -81,7 +81,7 @@ button:hover {
 .modal-footer button {
   padding: 6px 10px;
 }
-.clos-icon {
+.close-icon {
   padding: 4px 8px;
   min-width: auto;
   background: transparent;
@@ -92,7 +92,7 @@ button:hover {
   top: 5px;
   right: 5px;
 }
-.clos-icon:hover {
+.close-icon:hover {
   background: transparent;
   opacity: 0.6;
 }
