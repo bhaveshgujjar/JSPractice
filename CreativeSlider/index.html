@@ -194,6 +194,140 @@
       </div>
     </section>
 
+    <section>
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="https://placehold.it/300x200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Person 1</h4>
+                <p class="card-text">
+                  Person 1 is a member of this team. Find out more by checking
+                  his/her profile
+                </p>
+                <a href="#" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="https://placehold.it/300x200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Person 2</h4>
+                <p class="card-text">
+                  Person 2 is a member of this team. Find out more by checking
+                  his/her profile
+                </p>
+                <a href="#" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="https://placehold.it/300x200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Person 3</h4>
+                <p class="card-text">
+                  Person 3 is a member of this team. Find out more by checking
+                  his/her profile
+                </p>
+                <a href="#" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="https://placehold.it/300x200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Person 4</h4>
+                <p class="card-text">
+                  Person 4 is a member of this team. Find out more by checking
+                  his/her profile
+                </p>
+                <a href="#" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="https://placehold.it/300x200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Person 5</h4>
+                <p class="card-text">
+                  Person 5 is a member of this team. Find out more by checking
+                  his/her profile
+                </p>
+                <a href="#" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="https://placehold.it/300x200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Person 6</h4>
+                <p class="card-text">
+                  Person 6 is a member of this team. Find out more by checking
+                  his/her profile
+                </p>
+                <a href="#" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                src="https://placehold.it/300x200"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Person 7</h4>
+                <p class="card-text">
+                  Person 7 is a member of this team. Find out more by checking
+                  his/her profile
+                </p>
+                <a href="#" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
@@ -230,6 +364,20 @@
         var element = document.getElementById("mobileMenuList");
         element.classList.remove("open");
       }
+      $(function () {
+        var mySwiper = new Swiper(".swiper-container", {
+          autoplay: true,
+          spaceBetween: 30,
+          slidesPerView: "auto",
+          loop: true,
+          // If we need pagination
+          pagination: ".swiper-pagination",
+
+          // Navigation arrows
+          nextButton: ".swiper-button-next",
+          prevButton: ".swiper-button-prev",
+        });
+      });
     </script>
   </body>
 </html>
